@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 function readme(answers) {
-  `
+  return `
     # ${answers.title}
     #### ${answers.description}
 
@@ -77,7 +77,10 @@ inquirer
   .then((answers) => {
     console.log(answers);
 
-    fs.writeFile("readme/readme.md", readme(answers));
+    fs.writeFile("readme/readme.md", readme(answers), function (err) {
+      if (err) throw err;
+      console.log("file saved!");
+    });
   })
   .catch((error) => {
     if (error.isTtyError) {
