@@ -2,6 +2,24 @@ const inquirer = require("inquirer");
 
 const fs = require("fs");
 
+function readme(answers) {
+  `
+    # ${answers.title}
+    #### ${answers.description}
+
+
+
+    ![github badge](https://img.shields.io/badge/${answers.badge}-${answers.message}-${answers.color})
+
+    #### ${answers.content}
+    #### ${answers.packages}
+    #### ${answers.licensing}
+    #### ${answers.contributing}
+    #### ${answers.tests}
+    
+    `;
+}
+
 inquirer
   .prompt([
     {
@@ -40,11 +58,6 @@ inquirer
       name: "tests",
     },
 
-    {
-      type: "input",
-      message: "What is the title of your project?",
-      name: "question",
-    },
     {
       type: "input",
       message: "What is the title of your badge?",
