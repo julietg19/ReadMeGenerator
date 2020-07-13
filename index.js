@@ -4,18 +4,16 @@ const fs = require("fs");
 
 function readme(answers) {
   return `
-    # ${answers.title}
-    #### ${answers.description}
+# ${answers.title}
+#### ${answers.description}
 
+![github badge](https://img.shields.io/badge/${answers.badge}-${answers.message}-${answers.color})
 
-
-    ![github badge](https://img.shields.io/badge/${answers.badge}-${answers.message}-${answers.color})
-
-    #### ${answers.content}
-    #### ${answers.packages}
-    #### ${answers.licensing}
-    #### ${answers.contributing}
-    #### ${answers.tests}
+#### ${answers.content}
+#### ${answers.packages}
+#### ${answers.licensing}
+#### ${answers.contributing}
+#### ${answers.tests}
     
     `;
 }

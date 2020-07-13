@@ -1,15 +1,13 @@
 
-    # readme generator
-    #### a readme generator :)
+# Readme Generator
+#### A readme Generator :)
 
+![github badge](https://img.shields.io/badge/Juliet-Goldstein-pink)
 
-
-    ![github badge](https://img.shields.io/badge/Readme-Generator-pink)
-
-    #### none
-    #### inquirer
-    #### undefined
-    #### Juliet Goldstein
-    #### none
+#### none
+#### Inquirer
+#### undefined
+#### 
+#### none
     
     
