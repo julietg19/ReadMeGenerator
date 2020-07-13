@@ -76,6 +76,8 @@ inquirer
   ])
   .then((answers) => {
     console.log(answers);
+
+    fs.writeFile("readme/readme.md", readme(answers));
   })
   .catch((error) => {
     if (error.isTtyError) {
