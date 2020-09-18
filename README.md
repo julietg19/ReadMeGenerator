@@ -1,10 +1,8 @@
 # ReadMeGenerator# Unit 09 Node.js and ES6+ Homework: Good README Generator
+For this assignment, I created a command-line interface to generate a README.md file.
 
-Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
 
-```sh
-node index.js
-```
+## Project Details
 
 The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
 
